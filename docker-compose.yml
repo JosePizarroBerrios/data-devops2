@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   db:
+    image: ${DOCKER_USER}/innovatech-db:latest
     build: .
     container_name: mysql_proyecto_db
     restart: unless-stopped
@@ -19,4 +20,4 @@ volumes:
 
 networks:
   eval-net:
-    external: true
+    driver: bridge
