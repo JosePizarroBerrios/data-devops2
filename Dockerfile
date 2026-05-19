@@ -7,3 +7,5 @@ COPY 01_creacion_base_datos.sql /docker-entrypoint-initdb.d/01_creacion_base_dat
 COPY 02_backup_y_mantenimiento.sql /docker-entrypoint-initdb.d/02_backup_y_mantenimiento.sql
 
 EXPOSE 3306
+
+#test push
